@@ -36,11 +36,11 @@ namespace AppListaMercado.Helper
         public Task<List<Produto>> Update(Produto t)
         {
             string sql = "UPDATE produto SET " +
-                         "NomeProduto=?, Qntd=?, PrecoEstimado=?, PrecoPago=? " +
+                         "Nome=?, Qtd=?, PrecoPrevisto=?, PrecoPago=? " +
                          "WHERE Id=?";
 
             return _connection.QueryAsync<Produto>(sql,
-                t.NomeProduto, t.Qntd, t.PrecoEstimado, t.PrecoPago, t.Id);
+                t.Nome, t.Qtd, t.PrecoPrevisto, t.PrecoPago, t.Id);
         }
 
         public Task<List<Produto>> Search(string q)
