@@ -11,7 +11,7 @@ namespace AppListaMercado.Model
         public int Id { get; set; }
         public string Nome { get; set; }
         public double Qtd { get; set; }
-        public double PrecoPrevisto { get; set; }
-        public double PrecoPago { get; set; }
+        public double ValorPrevisto { get; set; }
+        public double Valor { get; set; }
     }
 }
