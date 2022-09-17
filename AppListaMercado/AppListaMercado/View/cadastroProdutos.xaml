@@ -41,8 +41,19 @@
                    Keyboard="Numeric"
                    Text=""
                    Placeholder="Digite o valor previsto do produto" />
-  
+          
             <Label Text=" " />
+  
+            <Label Text="Valor pago:" 
+                   TextColor="#ffffff"
+                   HorizontalOptions="Center"/>
+        
+            <Entry x:Name="txt_valor"
+                   Keyboard="Numeric"
+                   Text=""
+                   Placeholder="Digite o valor pago do produto" />
+  
+          
             <Label Text=" " />
   
             <Button Text="Adicionar Produto" 
