@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaMercado.View.cadastroProdutos">
+    
+  <ContentPage.Content>
+        <StackLayout BackgroundColor="#edebeb">
+        
+            <Label Text="Formulário para incluir produtos" 
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   FontSize="35" 
+                   FontAttributes="Bold" />
+  
+            <Label Text="Nome do Produto:" 
+                   TextColor="#ffffff"
+                   HorizontalOptions="Center"/>
+  
+            <Entry x:Name="txt_nome"
+                   Text=""
+                   Placeholder="Digite o nome do produto" />
+  
+            <Label Text=" " />
+  
+            <Label Text="Quantidade:" 
+                   TextColor="#ffffff"
+                   HorizontalOptions="Center"/>
+        
+            <Entry x:Name="txt_qtd"
+                   Keyboard="Numeric"
+                   Text=""
+                   Placeholder="Digite a quantidade do produto" />
+  
+            <Label Text=" " />
+  
+            <Label Text="Valor previsto:" 
+                   TextColor="#ffffff"
+                   HorizontalOptions="Center"/>
+        
+            <Entry x:Name="txt_valorprevisto"
+                   Keyboard="Numeric"
+                   Text=""
+                   Placeholder="Digite o valor previsto do produto" />
+  
+            <Label Text=" " />
+            <Label Text=" " />
+  
+            <Button Text="Adicionar Produto" 
+                    Clicked="Button_Clicked_1"
+                    TextColor="#000000"
+                    FontAttributes="Bold"
+                    BackgroundColor="#5e5e5e"/>
