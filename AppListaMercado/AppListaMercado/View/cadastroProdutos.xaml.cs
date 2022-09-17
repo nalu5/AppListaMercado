@@ -26,7 +26,7 @@ namespace AppListaMercado.View
                 t.Nome = txt_nome.Text;
                 t.Qtd = txt_qtd.Text;
                 t.Valor_Previsto = txt_valorprevisto.Text;
-                t.Valor_Pago = txt_valorpago.Text;
+                t.Valor_Pago = txt_valor.Text;
                 
                 await App.DataBase.Save(t);
                 await DisplayAlert("Tudo pronto", "O formulário foi concluido :)");
